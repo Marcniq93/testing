@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="CommuTrade">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>CommuTrade</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1742561676";
+  </script>
+  <!-- This script adds the Flutter Service Worker (if "flutter build web" is run with "--pwa-strategy=offline-first") -->
+  <script src="flutter_service_worker.js?v=serviceWorkerVersion"></script>
+
+  <style>
+    /* Basic splash screen styling */
+    body {
+      margin: 0;
+      background-color: #26A69A; /* Teal background matching your app theme */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden; /* Prevent scrollbars */
+    }
+    .loading-container {
+      text-align: center;
+      color: white;
+      font-family: 'Roboto', sans-serif; /* A common web-safe font */
+    }
+    .loading-icon {
+      font-size: 80px; /* Size of the icon */
+      margin-bottom: 16px;
+      animation: pulse 1.5s infinite ease-in-out; /* Simple pulsing animation */
+    }
+    .loading-text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    /* Simple pulsing animation for the icon */
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+<div class="loading-container">
+  <div class="loading-icon">
+    <!-- Using a simple text icon for now, you can replace with an SVG or image later -->
+    &#x1F3EC; <!-- Unicode for a university building/storefront icon -->
+  </div>
+  <div class="loading-text">CommuTrade</div>
+</div>
+
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
